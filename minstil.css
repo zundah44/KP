@@ -1,6 +1,17 @@
 body {
   background-color: rgb(199, 234, 238);
+} 
+
+body {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
 }
+
+
+
 
 h1 {
   color: rgb(4, 4, 4)14, 14, 85);
@@ -22,20 +33,17 @@ h1 {
     'menu main main main right right'
     'menu footer footer footer footer footer';
   gap: 10px;
-  background-color: #f0f68b;
+  background-color: hsl(185, 51%, 86%);
   padding: 10px;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(177, 217, 220, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
 }
 </style>
-
-git config --global user.name "John Doe"
-git config --global user.email "johndoe@email.com"
 
 </body>
 </html>
