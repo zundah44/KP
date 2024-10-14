@@ -1,13 +1,11 @@
 <!doctype html>
 
 <html lang="no">
-
-
 <head> 
   
   <title> Min nettside </title>
   <!-- utf-8 gjør at vi kan bruke æ, ø og å --><
-  <link rel="stylesheet" href="../CSS/rosa.css">
+  <link rel="stylesheet" href="../CSS/underside.css">
   <meta charset="utf-8">
   <meta http-equiv="X-AU-Comptible"
   </head>
@@ -15,21 +13,37 @@
     <h1 style="background-color:rgb(178, 234, 160);">Underside</h1>
   <p> Av Sunniva </p>
 
-
-    </head>
-    <body>
+  <style>
+    body {
+      background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxNjUyNjA4LXdpa2ltZWRpYS1pbWFnZS1rb3dyaHNkNC5qcGc.jpg");
+      background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    }
+   </style>
     
+  <style>
+    .flex-container {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: rgb(178, 234, 160);
+    }
     
-    <div class="grid-container">
-      <div class="item1">Overskrift</div>
-      <div class="item2">Meny</div>
-      <div class="item3">Main</div>  
-      <div class="item4">bilde</div>
-      <div class="item5">Footer</div>
-
-    </div>
-  
-
+    .flex-container > div {
+      background-color: #f1f1f1;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+    </style>
+  <div class="flex-container">
+    <div><a href="HTML/index.html">index</a></div>
+    <div><a href="HTML/underside.html">UNDERSIDE</a></div>
+    <div><a href="HTML/london.html">london</a></div>  
+    <div><a href="HTML/underside.html">UNDERSIDE</a></div>
+  </div>
 
 </body>
   </html>

@@ -1,7 +1,22 @@
-h1 {
-    font-family:  Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
+p {
+  text-decoration: underline;
+} 
 
-    {
-        background-image: url("https://t4.ftcdn.net/jpg/00/47/20/87/360_F_47208700_onshjX7W2ZGeGFp1bGu9nJl4PxW67kVl.jpg");
-      }
+body{
+  background-color: rgb(250, 233, 217);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+  
