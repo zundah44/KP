@@ -4,4 +4,19 @@ h1 {
 p {
   color: rgb(255, 255, 255);
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+a.ex2:hover, a.ex2:active {font-size: 150%;}
 
