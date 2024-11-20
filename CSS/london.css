@@ -1,9 +1,24 @@
 p1 {
   text-decoration: underline;
 } 
-
 body{
   background-color: rgb(250, 233, 217);
+}
+p2 { font-size: 20px;
+}
+/* IKKE RØR det under (Bildene og tekst av byggningene) */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: #cfc0a6;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
 }
 .grid-container {
   display: grid;
@@ -12,17 +27,7 @@ body{
   background-color: #cfc0a6;
   padding: 10px;
 }
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
-  text-align: center;
-  font-size: 30px;
-}
-.box {
-  padding: 10px;
-  border: 1px solid #584c36;
-}
+/* IKKE RØR det over!!! */
 
 a.one:link {color: rgb(0, 0, 0); text-decoration: none;}
 a.one:visited {text-decoration: none;}
@@ -54,11 +59,79 @@ a.six:visited {text-decoration: none;}
 a.six:hover {color: rgb(243, 12, 255); text-decoration: underline;}
 a.six:active {text-decoration: none;}
 
-img.right {
-  display: block;
-  margin-left: auto;
-  margin-right: 0px;
-  width: 30%;
-  height: auto;
+
+/* Under her er bokser til buss, pub og spisesteder */
+
+.grid-containerBuss {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  background-color: #cfc0ab;
+  padding: 100px;
 }
+
+.grid-containerBuss > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.grid-containerPub {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  background-color: #cfc0ab;
+  padding: 100px;
+}
+
+.grid-containerPub > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.grid-containerSpisesteder {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #cfc0a6;
+  padding: 10px;
+}
+
+.grid-containerSpisesteder > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+
+
+
+/* Over her er griddene fra buss, pub og spisesteder */
+
+
+
+.box {
+  padding: 10px;
+  border: 1px solid #584c36;
+}
+
+
+
 
