@@ -2,7 +2,8 @@ h1 {
   text-shadow: 1px 1px;
 }
 p {
-  color: rgb(250, 250, 250);
+  color: rgb(255, 255, 255);
+  padding-left: 200px;
 }
 body {
   background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4MTU5NDg4NC1pbWFnZS1rd3Z4cnkzaC5qcGc.jpg");
@@ -11,10 +12,40 @@ body {
   background-size: cover;
   margin: 0;
 }
-/* En tabell til Undersiden */
 
-table, th, td {
-  border: 1px solid;
+/* Gridd under? */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat (13fr, 1);
+  margin-left: 15%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.section-1 {
+  border: solid black 5px;
+  margin: 10px;
+  text-align: center;
+  margin-left: 3px;
+}
+
+.section-2 {
+  font-size: 20px;
+  text-align: center;
+  background-color:#8eccff;
+  grid-area: 11 / 1 span 11 / span 1;
+}
+/* Grid over */
+
+
+/* En tabell til Undersiden */
+table {
+padding: 1px;
+}
+th, td {
+  padding-left: 100px;
+  padding-right: 50px;
+  border: 2px solid;
 }
 th {
   height: 70px;
@@ -24,6 +55,33 @@ th,tr,th:nth-child(even) {
 }
 td {
   height: 70px;
+}
+/* Tabell over */
+
+
+/* Sidebar under */
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
 

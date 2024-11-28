@@ -12,6 +12,13 @@ body {
   background-attachment: fixed;  
   background-size: cover;
   margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  word-spacing: 1.4px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+  font-family: "Lato", sans-serif;
 }
 /* Forskjellige type tekster */
 p2 {
@@ -41,14 +48,6 @@ border: 10px solid var(--clr-dark);
   font-weight: 700;
   color: var(--clr-light);
   border: 10px solid var(--clr-accent);
-}
-body {
-  padding: 0;
-  line-height: 1.6;
-  word-spacing: 1.4px;
-  font-family: 'Roboto', sans-serif;
-  color: var(--clr-dark);
-  background-color: var(--clr-light);
 }
 
 :root {
@@ -88,14 +87,6 @@ body {
         grid-column-end: 10;
         }
 
-
-
-
-
-        body {
-          font-family: "Lato", sans-serif;
-        }
-        
         .sidenav {
           height: 100%;
           width: 160px;
@@ -141,7 +132,6 @@ body {
   .itemZ {
     padding: 0.5em;
     background-color: #ffffff;
-    font-weight: 700;
     color: var(--clr-light);
     border: 10px solid var(--clr-accent);
   }
@@ -185,14 +175,4 @@ body {
 
         /* Over her er grid boksene*/
 
-   
-
-        
-     
-       
-
-
-
-  
-    
 
