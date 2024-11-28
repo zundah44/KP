@@ -10,10 +10,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
-  margin: 0;
+  margin: 2;
 }
 
-/* Gridd under? */
+/* Gridd under */
 .grid-container {
   display: grid;
   grid-template-columns: repeat (13fr, 1);
