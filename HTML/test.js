@@ -1,19 +1,14 @@
-function finnNavnPåFunksjon(str) {
+const string  = 4;
+console.log(string)
 
-    let count = 0;
-    
-    const vowels = "aeiou";
-    
-    for (let i = 0; i < str.length; i++) {
-    
-    if (vowels.indexOf(str[i])>=0) {
-    
-    count++;
-    
-    }
-    
-    }
-    
-    return count;
-    
-    }
+let word = '"hei"';
+console.log(word)
+
+let number = 4.12;
+console.log(number)
+
+let d = "[]";
+console.log(d)
+
+
+
