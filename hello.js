@@ -1,5 +1,5 @@
-let firstName = "Sunniva", lastName ="Dahle", age = 16;
-console.log("Hello,", firstName, lastName, age)
+//let firstName = "Sunniva", lastName ="Dahle", age = 16;
+//console.log("Hello,", firstName, lastName, age)
 
 // Mattestykker *
 let x = 10;
@@ -12,6 +12,7 @@ console.log(5/2)
 console.log(5+2)
 console.log(5-2)
 
+/*
 // Noe tekstgreier*
 function myFunction1() {
     console.log("heiheiheiheiheiheiehei");
@@ -57,4 +58,13 @@ console.log(animals);
 //Oppgave 8 *
 const colors = ['gul', 'rød', 'blå', 'grønn'];
 console.log(colors);
+*/
+
+//console.log ('mjau')
+
+//console.log(3+4)
+let name = "Nancy";
+let grus4 = "otto";
+console.log('Hello ' + name)
+console.log(grus4 + ' er god')
 

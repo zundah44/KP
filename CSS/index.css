@@ -19,34 +19,27 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat (14fr, 1);
-  background-color: #2196F3;
+  grid-template-columns: repeat (13, 1fr);
   padding: 10px;
   padding-left: 250px;
   padding-right: 100px;
 }
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
+.section-1 {
+  grid-area: 1 / 1 / span 1 / span 13;
+  background-color: rgba(152, 227, 167, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.section1, .section3 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(252, 249, 249, 0.1);
+}
 
 
 
