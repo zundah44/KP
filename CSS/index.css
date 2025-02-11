@@ -11,24 +11,29 @@ p {
   font-family: "Lato", sans-serif;
 } 
 body {
-  background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4MTU5NDg4NC1pbWFnZS1rd3Z4cnkzaC5qcGc.jpg");
+  background-image: url("bilde");
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
 }
+/* Sidebar linker */ 
+
+
+/* Sidebar linker slutt*/ 
+
 
 /*  Gridd 3 boxer under */
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'right header header header header header'
-    'right main main main left left'
-    'right main main main left left'
-    'right bilde bilde footer footer footer'
-    'right bilde bilde footer footer footer'
-    'right tekst tekst footer footer footer'
-    'right tekst tekst footer footer footer';
+    'right header header header header header header'
+    'right main main main left left left'
+    'right main main main left left left'
+    'right bilde bilde footer footer footer footer'
+    'right bilde bilde footer footer footer footer'
+    'right tekst tekst footer footer footer footer'
+    'right tekst tekst footer footer footer footer';
   gap: 10px; /* Increased gap */
   
   padding: 20px; /* Increased padding */
@@ -80,6 +85,33 @@ body {
   color: #333; /* Darker text for readability */
   font-size: 1.1em;
   text-align: center;
+  div {background-color: rgb(166, 217, 166);}
+div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: #a5dbaa;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li { 
+  background: #9bd3e8; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #000000;}
 }
 
 .item6 {
