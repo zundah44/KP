@@ -4,7 +4,6 @@ h1 {
   font-family: "Lato", sans-serif;
     font-size: 30px;
 } 
-
 p {
   text-align: center;
   color: rgb(0, 0, 0);
@@ -27,13 +26,14 @@ body {
 .grid-container {
   display: grid;
   grid-template-areas:
-    'right header header header header header header'
-    'right main main main left left left'
-    'right main main main left left left'
-    'right bilde bilde footer footer footer footer'
-    'right bilde bilde footer footer footer footer'
-    'right tekst tekst footer footer footer footer'
-    'right tekst tekst footer footer footer footer';
+    'header header header header header header header'
+    'main main main main main left left'
+    'main main main main main left left'
+    'tekst tekst tekst tekst footer footer footer'
+    'tekst tekst tekst tekst footer footer footer'
+    'tekst tekst tekst tekst footer footer footer'
+    'tekst tekst tekst tekst footer footer footer'
+    'noe noe noe noe noe noe noe';
   gap: 10px; /* Increased gap */
   
   padding: 20px; /* Increased padding */
@@ -41,7 +41,7 @@ body {
 }
 
 
-.item1, .item2, .item3, .item4, .item5 {
+.item1, .item2, .item3, .item4, .item5, .item6 {
   padding: 20px;
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
@@ -63,7 +63,7 @@ body {
   text-align: center;
 }
 
-.item5{
+.item3{
   grid-area: left;
   background-color: #c0e7bd;
   color: #333; /* Darker text for readability */
@@ -71,7 +71,7 @@ body {
   text-align: center;
 }
 
-.item3 {
+.item4 {
   grid-area: footer;
   background-color: #c0e7bd;
   color: #333; /* Darker text for readability */
@@ -79,50 +79,7 @@ body {
   text-align: center;
 }
 
-.item4 {
-  grid-area: right;
-  background-color: #c0e7bd;
-  color: #333; /* Darker text for readability */
-  font-size: 1.1em;
-  text-align: center;
-  div {background-color: rgb(166, 217, 166);}
-div a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  padding: 15px;
-  display:inline-block;
-}
-ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-ul li {display: inline-block;}
-ul li:hover {background: #a5dbaa;}
-ul li:hover ul {display: block;}
-ul li ul {
-  position: absolute;
-  width: 200px;
-  display: none;
-}
-ul li ul li { 
-  background: #9bd3e8; 
-  display: block; 
-}
-ul li ul li a {display:block !important;} 
-ul li ul li:hover {background: #000000;}
-}
-
-.item6 {
-  grid-area: bilde;
-  background-color: #c0e7bd;
-  color: #333; /* Darker text for readability */
-  font-size: 1.1em;
-  text-align: center;
-}
-
-.item7 {
+.item5 {
   grid-area: tekst;
   background-color: #c0e7bd;
   color: #333; /* Darker text for readability */
@@ -130,4 +87,10 @@ ul li ul li:hover {background: #000000;}
   text-align: center;
 }
        
-
+.item6 {
+  grid-area: noe;
+  background-color: #c0e7bd;
+  color: #333; /* Darker text for readability */
+  font-size: 1.1em;
+  text-align: center;
+}
