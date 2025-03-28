@@ -1,0 +1,64 @@
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  .icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .active {
+    background-color: #74cf66;
+  }
+
+  /*  Grid med spill under  */
+
+.grid-container {
+display: grid;
+grid-template-areas: 
+'header header header header header header'
+'header header header header header header'
+'main main main bilde bilde bilde'
+'main main main bilde bilde bilde'
+'main main main bilde bilde bilde'
+'main main main bilde bilde bilde';
+}
+
+
+
+.item1{
+grid-area: header;
+background-color: #c0e7bd;
+color: #555;
+font-size: 1.1em;
+text-align: center;
+}
+
+.item2{
+  grid-area: main;
+  background-color: #c0e7bd;
+  color: #555;
+  font-size: 1.1em;
+  text-align: center;
+  }
+
+  .item3{
+    grid-area: bilde;
+    background-color: #c0e7bd;
+    color: #555;
+    font-size: 1.1em;
+    text-align: center;
+    }
+
+  
