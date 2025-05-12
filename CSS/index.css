@@ -1,126 +1,71 @@
-h1 {
-  text-align: center;
-  color: rgb(0, 0, 0);
-  font-family: "Lato", sans-serif;
-  font-size: 30px;
-} 
-p {
-  text-align: center;
-  color: rgb(0, 0, 0);
-  font-family: "Lato", sans-serif;
-} 
 body {
-  background-image: url("bilde");
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-}
-
-body {margin:0;}
-
-.icon-bar {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
-}
-
-.icon-bar a {
-  float: left;
-  width: 20%;
-  text-align: center;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px;
-}
-
-.icon-bar a:hover {
-  background-color: #000;
-}
-
-.active {
-  background-color: #74cf66;
-}
-
-
-/*  Gridd 3 boxer under */
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header header'
-    'main main main main main left left'
-    'main main main main main left left'
-    'tekst tekst tekst tekst footer footer footer'
-    'tekst tekst tekst tekst footer footer footer'
-    'tekst tekst tekst tekst footer footer footer'
-    'tekst tekst tekst tekst footer footer footer'
-    'noe noe noe noe noe noe noe';
-  gap: 10px; /* Increased gap */
+    background-color: rgb(197, 230, 241);
+  }
   
-  padding: 20px; /* Increased padding */
-  height: 800px;
-}
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
 
-
-.item1, .item2, .item3, .item4, .item5, .item6 {
-  padding: 20px;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-}
-
-.item0 {
-  grid-area: header;
-  background-color: #5a5a5a;
-  color: #333; /* Darker text for readability */
-  font-size: 1.1em;
-  text-align: center;
-}
-
-.item1 {
-  grid-area: header;
-  background-color: #c0e7bd;
-  color: #333; /* Darker text for readability */
-  font-size: 1.1em;
-  text-align: center;
-}
-
-.item2 {
-  grid-area: main;
-  background-color: #c0e7bd;
-  color: #333; /* Darker text for readability */
-  font-size: 1.1em;
-  text-align: center;
-}
-
-.item3{
-  grid-area: left;
-  background-color: #c0e7bd;
-  color: #333; /* Darker text for readability */
-  font-size: 1.1em;
-  text-align: center;
-}
-
-.item4 {
-  grid-area: footer;
-  background-color: #c0e7bd;
-  color: #333; /* Darker text for readability */
-  font-size: 1.1em;
-  text-align: center;
-}
-
-.item5 {
-  grid-area: tekst;
-  background-color: #c0e7bd;
-  color: #333; /* Darker text for readability */
-  font-size: 1.1em;
-  text-align: center;
-}
-       
-.item6 {
-  grid-area: noe;
-  background-color: #c0e7bd;
-  color: #333; /* Darker text for readability */
-  font-size: 1.1em;
-  text-align: center;
-}
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'main main main left left left'
+      'main main main left left left'
+      'main main main left left left'
+      'tekst tekst tekst footer footer footer'
+      'tekst tekst tekst footer footer footer'
+      'tekst tekst tekst footer footer footer';
+    gap: 10px; /* Increased gap */
+    
+    padding: 20px; /* Increased padding */
+    height: 800px;
+  }
+  
+  .item1, .item2, .item3, .item4, .item5,.grid-container{
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .item1 {
+    grid-area: header;
+    background-color: #c0e7bd;
+    color: #333; /* Darker text for readability */
+    font-size: 1.1em;
+    text-align: center;
+  }
+  .item2 {
+    grid-area: main;
+    background-color: #c0e7bd;
+    color: #333; /* Darker text for readability */
+    font-size: 1.1em;
+    text-align: center;
+  }
+  .item3{
+    grid-area: left;
+    background-color: #c0e7bd;
+    color: #333; /* Darker text for readability */
+    font-size: 1.1em;
+    text-align: center;
+  }
+  .item4 {
+    grid-area: footer;
+    background-color: #c0e7bd;
+    color: #333; /* Darker text for readability */
+    font-size: 1.1em;
+    text-align: center;
+  }
+  .item5 {
+    grid-area: tekst;
+    background-color: #c0e7bd;
+    color: #333; /* Darker text for readability */
+    font-size: 1.1em;
+    text-align: center;
+  }
+  
