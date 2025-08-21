@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enkel Slideshow</title>
+<link rel="stylesheet" href="/CSS/slideshow.css">
+</head>
+<body>
+
+<h2>Enkel Slideshow</h2>
+<p>Laget av Sunniva</p>
+
+<div class="slideshow-container">
+  <img class="slides" src="../Bilder/test.jpeg" alt="Bilde 1">
+  <img class="slides" src="https://picsum.photos/id/1016/600/400" alt="Bilde 2">
+  <img class="slides" src="https://picsum.photos/id/1025/600/400" alt="Bilde 3">
+
+  <button class="prev" onclick="changeSlide(-1)">❮</button>
+  <button class="next" onclick="changeSlide(1)">❯</button>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlide(slideIndex);
+
+function changeSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+function showSlide(n) {
+  let slides = document.getElementsByClassName("slides");
+  if (n >= slides.length) { slideIndex = 0 }
+  if (n < 0) { slideIndex = slides.length - 1 }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex].style.display = "block";
+}
+</script>
+
+</body>
+</html>
