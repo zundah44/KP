@@ -15,6 +15,11 @@ body {
     text-shadow: 1px;
   }
 
+  h3 {
+    font-size: 10px;
+    text-shadow: 1px;
+  }
+
   p {
     color: rgb(0, 0, 0);
     font-size: 20px;
@@ -91,7 +96,23 @@ body {margin:0;}
 .item2 { grid-area: left; }
 /* Grid over*/
 
+.underside{
+  background-color: #bde7e1;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  }
 
+  .centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
 
 /* ---------- Mobiltilpasning ---------- */
 @media (max-width: 768px) {
